@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pets</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+    <style>
+        body   
+        {
+            font-family: Lexend, sans-serif;
+            font-size: 12px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 48px;
+            font-weight: bold;
+            color: #33372C;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .subtitle {
+            margin: 20px;
+            padding: 20px;
+            font-size: 3.2em;
+            color: #444;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #30372A;
+            padding: 20px;
+        }
+
+        header img {
+            width: 100px;
+            height: auto;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav li {
+            display: inline-block;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .section-dogs {
+            background-color: #FF885B;
+        }
+
+        .section-cats {
+            background-color: #FFE5CF;
+        }
+
+        .section-fish {
+            background-color: #557C56;
+        }
+        .pet-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .pet-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%; /* Creates a circular shape */
+            margin-right: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .container {
+            max-width: 75%;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+    <header>
+        <img src="./img/logo.jpeg" alt="">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+</h1>
+    <div class="title">Pets</div>
+    <div class="container">
+    <section class="section-dogs">
+        <div class="pet-container">
+        <div class="subtitle">Dogs</div>
+        <img  class="pet-image" src="./img/dogs.jpeg" alt=" Two Dog " >
+        <p>Dogs are known for their loyalty, intelligence, and playful nature. They come in various breeds and sizes, making them suitable for different lifestyles.</p>
+        </div>
+    </section>
+
+    <section class="section-cat">
+        <div class="pet-container">
+        <div class="subtitle">Cats</div>
+        <img  class="pet-image"  src="./img/cat.jpeg" alt="Tired Cat with grey hair" >
+        <p>Cats are independent creatures that can provide companionship and entertainment. They are known for their grace, agility, and ability to purr.</p>
+        </div>
+    </section>
+
+    <section class="section-fish">
+        <div class="pet-container">
+        <div class="subtitle">Fish</div>
+        <img class="pet-image"  src="./img/fish.jpeg" alt="Yellow Fish">
+        <p>Fish are low-maintenance pets that can add a touch of tranquility to your home. They come in a wide variety of colors and shapes, and observing them can be relaxing.</p>
+        </div> 
+    </section>
+</div>
+</body>
+</html>
